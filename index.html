@@ -6,8 +6,8 @@
     <title>Pixel Gato</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="Body">
+<body class="Body">
+    
         <div class="Top">  <!-- esta es la parte superior del la pagina un cuadro blanco con el logo que es una imagen-->
             <img class="LogoPixelGatoFomdoBlanco" src="https://via.placeholder.com/548x93" />
         </div>
@@ -47,9 +47,9 @@
             </div>
         </figure>
         <div class="Container"> <!-- es un contenedor donde está el h3 y las dos cards-->
-            <header class="Container"> <!-- es un contenedor donde está solo el h3-->
+            <div class="Container"> <!-- es un contenedor donde está solo el h3-->
                 <h3 class="Title">Hoodies Para Ellos</h3> <!-- un texto h3-->
-            </header>
+            </div>
             <div class="List"> <!-- es un contenedor donde están las dos cards-->
                 <div class="Row"> <!-- es un contenedor donde están las dos cards-->
                     <article class="Card"> <!-- la primera card que contiene una imagen y un contenedor de texto-->
@@ -74,55 +74,59 @@
             </div>
         </div>
     </section>
-
+    <body>
+        <section class="FormularioRegistro"> <!-- contenedor de un formulario-->
+            <div class="Container"> <!-- contenedor de texto h3-->
+                <h3 class="Title">Iniciar sesión / Registrarse</h3> <!-- texto h3-->
+            </div>
+            <div class="List"> <!-- contenedor de dos rows-->
+                <div class="Row"> <!-- primer row-->
+                    <div class="Input"> <!-- contenedor de un input-->
+                        <h4 class="Title">Email</h4> <!-- h4 del input-->
+                        <div class="Textfield"> <!-- input-->
+                            <label class="Text">Enter your email</label>  <!-- texto del textfield-->
+                        </div>
+                    </div>
+                </div>
+                <div class="Row"> <!-- segundo row-->
+                    <div class="Input"> <!-- contenedor de un input-->
+                        <h4 class="Title">Password</h4> <!-- h4 del input-->
+                        <div class="Textfield"> <!-- input-->
+                            <label class="Text">Enter your password</label>  <!-- texto del textfield-->
+                        </div>
+                    </div>
+                </div>
+                <div class="ButtonGroup"> <!-- grupo de botones-->
+                    <button class="Button Secondary"> <!-- botón-->
+                        <span class="Title">Register</span> <!-- nombre del botón-->
+                    </button>
+                    <button class="Button Primary"> <!-- botón-->
+                        <span class="Title">Sign In</span> <!-- nombre del botón-->
+                    </button>
+                </div>
+            </div>
+        </section>
+    </body>
     
-        <div class="FormularioRegistro">
-            <div class="Vector200"></div>
-            <div class="Container">
-                <div class="Title">Iniciar sesión / Registrarse</div>
+        </div> 
+        <footer class="Footer"> <!-- este es el footer-->
+            <div class="Frame427318910"> <!-- contenedor de dos secciones de texto-->
+                <section class="contact-info"> <!-- primera sección de texto-->
+                    <h4 class="Title">Contácto</h4> <!-- es solo texto-->
+                    <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p> <!-- es solo texto-->
+                    <p class="Whatsapp">Whatsapp: 322 000 01 01</p> <!-- es solo texto-->
+                    <p class="Location">Bogotá, Colombia</p> <!-- es solo texto-->
+                </section>
+                <section class="legal-info"> <!-- segunda sección de texto-->
+                    <h4 class="Title">Legal</h4> <!-- es solo texto-->
+                    <ul class="legal-links">
+                        <li><a href="/politica-de-envio" class="Policy">Política de envío</a></li> <!-- es solo texto-->
+                        <li><a href="/politica-de-reembolso" class="RefundPolicy">Política de reembolso</a></li> <!-- es solo texto-->
+                        <li><a href="/terminos-de-servicio" class="Terms">Términos de Servicio</a></li> <!-- es solo texto-->
+                    </ul>
+                </section>
             </div>
-            <div class="List">
-                <div class="Row">
-                    <div class="Input">
-                        <div class="Title">Email</div>
-                        <div class="Textfield">
-                            <div class="Text">Enter your email</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Row">
-                    <div class="Input">
-                        <div class="Title">Password</div>
-                        <div class="Textfield">
-                            <div class="Text">Enter your password</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="Button">
-                    <div class="Seconday">
-                        <div class="Title">Register</div>
-                    </div>
-                    <div class="Primary">
-                        <div class="Title">Sign In</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Footer">
-            <div class="Frame427318910">
-                <div class="Frame7">
-                    <div class="ContCto">Contácto</div>
-                    <div class="CorreoInfoPixelgatoCom">Correo: info@pixelgato.com</div>
-                    <div class="Whatsapp3220000101">Whatsapp: 322 000 01 01</div>
-                    <div class="BogotColombia">Bogotá, Colombia</div>
-                </div>
-                <div class="Frame8">
-                    <div class="Legal">Legal</div>
-                    <div class="PoliticaDeEnvO">Politica de envío</div>
-                    <div class="PolitCaDeReembolso">Politíca de reembolso</div>
-                    <div class="TerminosDeServicio">Terminos de Servicio</div>
-                </div>
-            </div>
+        </footer>
         </div>
     </div>
 </body>
