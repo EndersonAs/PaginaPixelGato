@@ -42,20 +42,17 @@ body {
     padding: 10px 0;
 }
 
-.TopBar span{
-    color: #ffffff;
-}
-
 .Button {
     background: none;
     border: none;
     font-size: 16px;
+    color: #ffffff;
     cursor: pointer;
     margin: 0 10px;
 }
 
 .Button:hover {
-    text-decoration: underline;
+    transform: scale(1.03); 
 }
 
 /* Content Section */
@@ -65,66 +62,101 @@ body {
 }
 
 .PortadaFondo1440 {
-    width: 100%;
+    width: 1440px;
     height: auto;
 }
 
 /* Products Section */
 .ProductosHombres {
-    display: flex;
-    flex-direction: column;
+    border: 1px solid #d99f00;
+    width: 1440px;
+    height: 600px;
+    display: grid;
+    padding-left: 170px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 50px 0;
+    gap: 60px;
 }
 
 .ImageContainer {
-    margin-bottom: 20px;
+    border: 1px solid #c303a0;
+    width: 480px;
+    height: 428px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ParaEllos1 {
+.ImageContainer .ParaEllos1 {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
-.Container {
+.ContainerCard {
+    border: 1px solid #c303a0;
+    width: 480px;
+    height: 428px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.Title {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
+.Title1 {
+    border: 1px solid #03c339;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    }
 
+/* Contenedor de cards*/
 .List {
+    border: 1px solid #000000;
+    width: 480px;
+    height: 320px;
+    margin: 10px 10px;
+    padding: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.Row {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    gap: 10px;
 }
 
 .Card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+    border: 1px solid #000000;
     width: 200px;
+    height: 320px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ImageMini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageMini .Image {
+    border: 1px solid #000000;
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
 }
 
 .TextContent {
-    margin-top: 10px;
+    width: 200px;
+    height: 80px;
+}
+
+.Title {
+    font-size: 16px;
 }
 
 .Subtitle {
-    font-size: 14px;
+    font-size: 20px;
     color: #555;
 }
+
 
 /* Form Section */
 .FormularioRegistro {
