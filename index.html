@@ -1,80 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Gato</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="Body">
     
     <header class="Top">
-        <img class="LogoPixel" src="imagenes/logo Pixel-Gato fomdo blanco.png" alt="Logo de Pixel Gato" />
+        <img class="LogoPixel img-fluid" src="imagenes/logo Pixel-Gato fomdo blanco.png" alt="Logo de Pixel Gato" />
     </header>
 
-    <nav class="TopBar">
-        <div class="Frame427318909">
-            <div class="Frame427318908">
-                <button class="Button">
-                    <span class="Ghost">HOMBRE</span>
-                </button>
-                <button class="Button">
-                    <span class="Ghost">CONTACTO</span>
-                </button>
-                <button class="Button">
-                    <span class="Ghost">MI CUENTA</span>
-                </button>
-                <button class="Button">
-                    <span class="Ghost">REGISTRARSE</span>
-                </button>
-            </div>
-
-            <div class="BiCart3">
-                <a href="carrito.html">
-                    <img class="Vector" src="imagenes/bi_cart3.svg" alt="Carrito de compras">
-                </a>
-            </div>
-            
+    <nav class="navbar navbar-expand-lg navbar-dark TopBar">
+        <a class="navbar-brand" href="#">Pixel Gato</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOMBRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INICIAR SECCIÓN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">REGISTRARSE</a>
+                </li>
+            </ul>
+            <a class="nav-link" href="carrito.html">
+                <img class="Vector" src="imagenes/bi_cart3.svg" alt="Carrito de compras">
+            </a>
         </div>
-
     </nav>
-      
-    <section class="Contenido">
-        <img class="PortadaFondo1440" src="imagenes/portada fondo 1440.png" alt="Imagen de portada" />
+  
+    <section class="Contenido container">
+        <img class="PortadaFondo1440 img-fluid" src="imagenes/portada fondo 1440.png" alt="Imagen de portada" />
     </section>
-    
-    <section class="ProductosHombres">
         
+    <section class="ProductosHombres container">
         <figure class="ImageContainer">
-                <img class="ParaEllos1" src="imagenes/para ellos.jpg" alt="Imagen para ellos" />
+            <img class="ParaEllos1 img-fluid" src="imagenes/para ellos.jpg" alt="Imagen para ellos" />
         </figure>
 
         <div class="ContainerCard">
-            
-                <h3 class="Title1">Hoodies Para Ellos</h3>
-            
+            <h3 class="Title1">Hoodies Para Ellos</h3>
             <div class="List">
-                
                 <article class="Card">
                     <img class="Image" src="imagenes/Mini_img1.jpg" alt="imagen">
-                   
                     <div class="TextContent">
                         <p class="Title">Clásicos</p>
                         <p class="Subtitle">Talla: S, M, L, XL</p>
                     </div>
                 </article>
-                
                 <article class="Card">
                     <img class="Image" src="imagenes/Mini_img2.jpg" alt="imagen">
-                 
                     <div class="TextContent">
                         <p class="Title">Retros</p>
                         <p class="Subtitle">Talla: S, M, L, XL</p>
                     </div>
                 </article>
-                
-                
             </div>
         </div>
     </section>
@@ -114,24 +105,29 @@
 
         </form>
     </section>
-    
-    <footer class="Footer">
-       
-        <section class="contact-info">
-            <h4 class="Title">Contácto</h4>
-            <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p>
-            <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
-            <p class="Location">Bogotá, Colombia</p>
-        </section>
-        <section class="legal-info">
-            <h4 class="Title">Legal</h4>
-            <ul class="legal-links">
-                <li><a href="/politica-de-envio" class="Policy">Política de envío</a></li>
-                <li><a href="/politica-de-reembolso" class="RefundPolicy">Política de reembolso</a></li>
-                <li><a href="/terminos-de-servicio" class="Terms">Términos de Servicio</a></li>
-            </ul>
-        </section>
-        
+
+    <footer class="Footer container">
+        <div class="row">
+            <section class="contact-info col-md-6">
+                <h4 class="Title">Contacto</h4>
+                <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p>
+                <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
+                <p class="Location">Bogotá, Colombia</p>
+            </section>
+            <section class="legal-info col-md-6">
+                <h4 class="Title">Legal</h4>
+                <ul class="legal-links">
+                    <li><a href="/politica-de-envio" class="Policy">Política de envío</a></li>
+                    <li><a href="/politica-de-reembolso" class="RefundPolicy">Política de reembolso</a></li>
+                    <li><a href="/terminos-de-servicio" class="Terms">Términos de Servicio</a></li>
+                </ul>
+            </section>
+        </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
