@@ -16,7 +16,7 @@
         </a>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark TopBar">
+    <nav class="navbar navbar-expand-lg navbar-dark TopBar"> <!--Esta es la Section de la barra de navegación-->
         <a class="navbar-brand" href="#">Pixel Gato</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,14 +42,20 @@
             <a class="nav-link" href="Pasarela.html">
                 <img class="Vector" src="imagenes/bi_cart4.svg" alt="Pasarela de pagos">
             </a>
+
+    
+        <a class="nav-link" href="#" id="userIcon">
+            <img class="Vector" src="imagenes/person-check-fill.svg" alt="Perfil de usuario" style="color: white;">
+        </a>
+
         </div>
     </nav>
   
-    <section class="Contenido container">
+    <section class="Contenido container"> <!--Esta es una imagen de portada-->
         <img class="PortadaFondo1440 img-fluid" src="imagenes/portada fondo 1440.png" alt="Imagen de portada" />
     </section>
         
-    <section class="ProductosHombres container">
+    <section class="ProductosHombres container">  <!--Esta es una section con una imagen ("ContainerCard") y dos card ("ContainerCard") ofreciendo algunos productos-->
         <figure class="ImageContainer">
             <img class="ParaEllos1 img-fluid" src="imagenes/para ellos.jpg" alt="Imagen para ellos" />
         </figure>
@@ -75,41 +81,34 @@
         </div>
     </section>
 
-    <section class="FormularioRegistro">
-
-        <div class="ContainerLogin">
-            <h3 class="Title">Iniciar sesión / Registrarse</h3>
-        </div>
-
-        <form class="form1">
-
-            <div class="Input">
-                <h4 class="Title">Email</h4>
-                <div class="Textfield">
-                    <label class="Text">Enter your email</label>
-                </div>
+   
+    
+        <section class="FormularioRegistro">
+            <div class="ContainerLogin">
+                <h3 class="Title">Iniciar sesión / Registrarse</h3>
             </div>
         
-            <div class="Input">
-                <h4 class="Title">Password</h4>
-                <div class="Textfield">
-                    <label class="Text">Enter your password</label>
+            <form class="form1" id="loginForm">
+                <div class="Input">
+                    <h4 class="Title">Email</h4>
+                    <input type="email" id="email" class="Textfield" placeholder="Enter your email">
                 </div>
-            </div>
-           
-
-            <div class="ButtonGroup">
-                <button class="Button Secondary">
-                <span class="Title">Register</span>
-                </button>
-
-                <button class="Button Primary">
-                <span class="Title">Sign In</span>
-                </button>
-            </div>
-
-        </form>
-    </section>
+        
+                <div class="Input">
+                    <h4 class="Title">Password</h4>
+                    <input type="password" id="password" class="Textfield" placeholder="Enter your password">
+                </div>
+        
+                <div class="ButtonGroup">
+                    <button type="button" class="Button Primary" id="loginButton">
+                        <span class="Title">Sign In</span>
+                    </button>
+                    <button type="button" class="Button Secondary" id="registerButton">
+                        <span class="Title">Register</span>
+                    </button>
+                </div>
+            </form>
+        </section>
 
     <footer class="Footer container">
         <div class="row">
@@ -133,6 +132,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="Js/scripts.js"></script>
+    
 </body>
 </html>
