@@ -9,41 +9,50 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body class="Body">
-    
-    <header class="Top">
-        <a href="index.html">
-            <img class="LogoPixel img-fluid" src="imagenes/logo Pixel-Gato fomdo blanco.png" alt="Logo de Pixel Gato">
+<!--imagen con el logo superior del nav -->
+<header class="Top">
+    <a href="index.html">
+        <img class="LogoPixel img-fluid" src="imagenes/imagenes_index/logo_Pixel.png" alt="Logo de Pixel Gato">
+    </a>
+</header>
+<!--barra de Navegacion-->
+<nav class="navbar navbar-expand-lg navbar-dark TopBar"> <!--Esta es la Section de la barra de navegación-->
+    <a class="navbar-brand" href="index.html">
+        <img src="/imagenes/Iconos/IconoGato.svg" alt="Icono de Gato">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="Catalogo.html">HOMBRE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">INICIAR SECCIÓN</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">REGISTRARSE</a>
+            </li>
+        </ul>
+        <!--iconos del del nav -->
+        <a class="nav-link" href="carrito.html">
+            <img class="Vector" src="imagenes/Iconos/IconoCarro.svg" alt="Carrito de compras">
         </a>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark TopBar">
-        <a class="navbar-brand" href="index.html">Pixel Gato</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="Catalogo.html">HOMBRE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">INICIAR SECCIÓN</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">REGISTRARSE</a>
-                </li>
-            </ul>
-            <a class="nav-link" href="carrito.html">
-                <img class="Vector" src="imagenes/bi_cart3.svg" alt="Carrito de compras">
-            </a>
-            <a class="nav-link" href="Pasarela.html">
-                <img class="Vector" src="imagenes/bi_cart4.svg" alt="Pasarela de pagos">
-            </a>
-        </div>
-    </nav>
+        <a class="nav-link" href="Pasarela.html">
+            <img class="Vector" src="imagenes/Iconos/IconoPasarela.svg" alt="Pasarela de pagos">
+        </a>
+        <a class="nav-link" href="Perfil.html" id="userIcon">
+            <img class="Vector" src="imagenes/Iconos/IconoPerson.svg" alt="Perfil de usuario">
+        </a>
+        <a class="nav-link" href="#">
+            <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil">
+        </a>
+    </div>
+</nav>
 
     <h1 class="titulo_carro">Carro de Compras</h1>
     <section class="container-gen-carro"> 

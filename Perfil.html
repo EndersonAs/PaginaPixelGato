@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
-<body class="Body">
+<body>
 <!--imagen con el logo superior del nav -->
     <header class="Top">
         <a href="index.html">
@@ -49,71 +48,46 @@
             <a class="nav-link" href="Perfil.html">
                 <img class="Vector" src="imagenes/Iconos/IconoPerson.svg" alt="Perfil de usuario">
             </a>
-            <a class="nav-link" href="#"></a>
+            <a class="nav-link" href="#">
                 <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil">
             </a>
         </div>
     </nav>
-    <!--Esta es una imagen de portada-->
-    <section class="Contenido container"> 
-        <img class="PortadaFondo1440 img-fluid" src="imagenes/imagenes_index/portada_1440.png" alt="Imagen de portada"/>
-    </section>
-    <!--Esta es una section con una imagen ("ContainerCard") y dos card ("ContainerCard") -->  
-    <section class="ProductosHombres container">  
-        <figure class="ImageContainer">
-            <img class="ParaEllos1 img-fluid" src="imagenes/imagenes_index/Para_Ellos.jpg" alt="Imagen para ellos" />
-        </figure>
 
-        <div class="ContainerCard">
-            <h3 class="Title1">Hoodies Para Ellos</h3>
-            <div class="List">
-                <article class="Card">
-                    <img class="Image" src="imagenes/Mini_img1.jpg" alt="imagen">
-                    <div class="TextContent">
-                        <p class="Title">Clásicos</p>
-                        <p class="Subtitle">Talla: S, M, L, XL</p>
-                    </div>
-                </article>
-                <article class="Card">
-                    <img class="Image" src="imagenes/Mini_img2.jpg" alt="imagen">
-                    <div class="TextContent">
-                        <p class="Title">Retros</p>
-                        <p class="Subtitle">Talla: S, M, L, XL</p>
-                    </div>
-                </article>
+    <div class="profile-container">
+        <h2 class="h2-perfil">Perfil de Cliente</h2>
+        <form id="profile-form">
+            <div class="form-group">
+                <label for="first-name">Nombres:</label>
+                <input type="text" id="first-name" name="first-name" required>
             </div>
+            <div class="form-group">
+                <label for="last-name">Apellidos:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Celular:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <button type="submit" id="update-button">Actualizar Información</button>
+            <button type="button" id="edit-button" onclick="enableEditing()">Editar Información</button>
+            <button type="button" id="delete-button">Eliminar Cuenta</button>
+        </form>
+        <div id="profile-info">
+            <h3>Información Actualizada</h3>
+            <p><strong>Nombres:</strong> <span id="display-first-name"></span></p>
+            <p><strong>Apellidos:</strong> <span id="display-last-name"></span></p>
+            <p><strong>Celular:</strong> <span id="display-phone"></span></p>
+            <p><strong>Dirección:</strong> <span id="display-address"></span></p>
         </div>
-    </section>
+    </div>
+    <script src="scripts.js"></script>
 
-   
-    
-        <section class="FormularioRegistro">
-            <div class="ContainerLogin">
-                <h3 class="Title">Iniciar sesión / Registrarse</h3>
-            </div>
-        
-            <form class="form1" id="loginForm">
-                <div class="Input">
-                    <h4 class="Title">Email</h4>
-                    <input type="email" id="email" class="Textfield" placeholder="Enter your email">
-                </div>
-        
-                <div class="Input">
-                    <h4 class="Title">Password</h4>
-                    <input type="password" id="password" class="Textfield" placeholder="Enter your password">
-                </div>
-        
-                <div class="ButtonGroup">
-                    <button type="button" class="Button Primary" id="loginButton">
-                        <span class="Title">Sign In</span>
-                    </button>
-                    <button type="button" class="Button Secondary" id="registerButton">
-                        <span class="Title">Register</span>
-                    </button>
-                </div>
-            </form>
-        </section>
-<!--Footer-->
+    <!--Footer-->
     <footer class="Footer container">
         <div class="row">
             <section class="contact-info col-md-6">
