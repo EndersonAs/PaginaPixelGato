@@ -296,12 +296,7 @@ body {
     margin-top: 5px;
 
 }
-.card_shop ul{
-    
-   
-    text-align: left;
-    padding: none;
-}
+
 .ul li{
     list-style: none;
 }
@@ -369,6 +364,195 @@ body {
         width: 100%;
     }
 }
+/*pagina carro de compras*/
+.titulo_carro {
+    text-align: center;
+    font-family: 'Retro Gaming', sans-serif;
+    margin: 20px 0;
+}
+
+.container-gen-carro {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container-carro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card_carro {
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 15px;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card_carro h5 {
+    font-weight: bold;
+}
+
+.card_carro img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.box_elementos_carro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.ul_carro li {
+    list-style: none;
+}
+
+.quantity-container-carro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.quantity-selector-carro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.quantity-btn-carro {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity-btn-carro:hover {
+    background-color: #ddd;
+}
+
+#quantity-carro {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+}
+
+.add-to-cart-btn-carro {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.add-to-cart-btn-carro:hover {
+    background-color: #cd2727;
+}
+
+.container-pago {
+    max-width: 500px;
+    height: 420px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.container-pago h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box_elementos_pago {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.ul-pago h4:nth-child(1) {
+    font-weight: bold;
+}
+
+.ul-pago h3:nth-child(3) {
+    font-weight: bold;
+}
+
+.ul-pago h4 {
+    color: #6c757d;
+}
+
+.botones-pago {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.boton-primario, .boton-secundario {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    padding: 20px 40px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.boton-primario:hover, .boton-secundario:hover {
+    background-color: #0099ff;
+}
+
+@media (max-width: 1024px) {
+    .container-gen-carro {
+        grid-template-columns: 1fr;
+    }
+
+    .container-pago {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_carro {
+        width: 45%;
+    }
+
+    .container-carro {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 480px) {
+    .card_carro {
+        width: 100%;
+    }
+
+    .container-carro {
+        justify-content: center;
+    }
+}
+
 
 /* Footer Section */
 .Footer {
