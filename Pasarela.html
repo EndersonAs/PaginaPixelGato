@@ -17,7 +17,7 @@
 </header>
 <!--barra de Navegacion-->
 <nav class="navbar navbar-expand-lg navbar-dark TopBar"> <!--Esta es la Section de la barra de navegación-->
-    
+        
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,13 +27,13 @@
                 <a class="nav-link" href="Catalogo.html">HOMBRE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CONTACTO</a>
+                <a class="nav-link" href="#contacto">CONTACTO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">INICIAR SECCIÓN</a>
+                <a class="nav-link" href="/index.html#loginForm">INICIAR SECCIÓN</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">REGISTRARSE</a>
+                <a class="nav-link" href="/index.html#loginForm">REGISTRARSE</a>
             </li>
         </ul>
         <!--iconos del del nav -->
@@ -43,10 +43,10 @@
         <a class="nav-link" href="Pasarela.html">
             <img class="Vector" src="imagenes/Iconos/IconoPasarela.svg" alt="Pasarela de pagos">
         </a>
-        <a class="nav-link" href="Perfil.html" id="userIcon">
+        <a class="nav-link" href="Perfil.html">
             <img class="Vector" src="imagenes/Iconos/IconoPerson.svg" alt="Perfil de usuario">
         </a>
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#"></a>
             <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil">
         </a>
     </div>
@@ -58,24 +58,21 @@
     </section>
 
   
-    <footer class="Footer container">
-        <div class="row">
-            <section class="contact-info col-md-6">
-                <h4 class="Title">Contacto</h4>
-                <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p>
-                <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
-                <p class="Location">Bogotá, Colombia</p>
-            </section>
-            <section class="legal-info col-md-6">
-                <h4 class="Title">Legal</h4>
-                <ul class="legal-links">
-                    <li><a href="/información.html" class="Policy">Política de envío</a></li>
-                    <li><a href="/información.html" class="RefundPolicy">Política de reembolso</a></li>
-                    <li><a href="/información.html" class="Terms">Términos de Servicio</a></li>
-                </ul>
-            </section>
-        </div>
-    </footer>
+    <footer class="Footer" id="contacto">
+        
+        <section class="legal-info">
+            <h4 class="Title">Contacto</h4>
+            <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p>
+            <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
+            <p class="Location">Bogotá, Colombia</p>
+        </section>
+        <section class="legal-info">
+            <h4 class="Title">Legal</h4>
+                <p><a href="/información.html" class="Policy">Política de envío</a></p>
+                <p><a href="/información.html" class="RefundPolicy">Política de reembolso</a></p>
+                <p><a href="/información.html" class="Terms">Términos de Servicio</a></p>
+        </section>    
+</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
