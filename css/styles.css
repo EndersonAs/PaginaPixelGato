@@ -247,14 +247,13 @@ body {
 
 .card_shop {
     width: 330px;
-    height: 390px;
-   
+    height: 460px;
     margin: 30px 10px;
     border-radius: 15px;
-    background-color: #ececec;
+    background-color:#f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     padding: 20px;
     box-sizing: border-box;
     
@@ -262,13 +261,17 @@ body {
 
 .card_shop h5 {
     font-weight: bold;
+    text-align: center;
 }
 
 .card_shop img {
+    
     width: 100%;
+    max-width: 200px;
     height: auto;
     border-radius: 5px;
     margin-bottom: 5px;
+    
     
 }
 
@@ -539,6 +542,7 @@ body {
 
 /*estilos de perfil*/
 .profile-container {
+    width: 100%;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
