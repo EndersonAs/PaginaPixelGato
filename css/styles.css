@@ -21,11 +21,10 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1400px;
     height: 213px;
     background: rgba(255, 255, 255, 0);
-    border: 2px solid black;
-    margin: 10px 0;
+    margin:20px 20px;
 }
 
 .LogoPixel {
@@ -49,7 +48,7 @@ body {
 }
 
 .TopBar .navbar-nav .nav-link:hover {
-    transform: scale(1.25); 
+    transform: scale(1.05); 
 }
 
 /* Content Section */
@@ -231,6 +230,13 @@ body {
     color: #000000;
 }
 
+.Button.Secondary:hover{
+    background-color:#0099ff;
+}
+.Button.Primary:hover{
+    background-color:#0099ff;
+}
+
 /* Media Queries para hacer la sección responsiva */
 @media (max-width: 768px) {
     .FormularioRegistro {
@@ -374,6 +380,8 @@ body {
 .container-gen-carro {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    width:100%;
+    max-width:1200px;
     gap: 20px;
     padding: 20px;
 }
@@ -467,11 +475,12 @@ body {
 }
 
 .container-pago {
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
     height: 420px;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid black;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    border: 1px solid black;
     border-radius: 15px;
     box-sizing: border-box;
 }
@@ -504,7 +513,7 @@ body {
 
 .botones-pago {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin: 20px 0;
     gap: 10px;
 }
@@ -513,8 +522,7 @@ body {
     background-color: #000000;
     color: white;
     border-radius: 5px;
-    padding: 20px 40px;
-    margin: 5px 0;
+    padding: 10px;
     cursor: pointer;
     font-weight: 400;
 }
@@ -585,21 +593,22 @@ body {
     border-radius: 5px;
 }
 
-button {
+.boton-perfil {
     display: block;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #000000;
-    color: #fff;
     font-size: 16px;
     cursor: pointer;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: white;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color:#0099ff;
 }
 #delete-button:hover{
     background-color: #cc0f0f;
@@ -613,6 +622,32 @@ button:hover {
     text-align: center;
     margin-bottom: 10px;
 }
+/*pagina información*/
+.info {
+    width: 100%;
+    max-width: 1000px;
+    text-align: justify;
+    background-color: #ececec;
+    padding: 50px;
+    margin: 50px 0px;
+    border-radius: 15px;
+    
+}
+.info p{
+    line-height: 2.5;
+    font-size: 18px;
+    font-weight: 400;
+}
+.info h2{
+    font-weight: bold;
+    margin:20px;
+    text-align: center;
+}
+.info h4 {
+    font-weight: bold;
+}
+
+
 
 /* Footer Section */
 .Footer {
