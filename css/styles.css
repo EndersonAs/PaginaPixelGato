@@ -1,676 +1,660 @@
 /* General Styles */
 body {
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Body Container */
 .Body {
-    width: 100%;
-    height: 100%;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Header and Logo */
 .Top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1400px;
-    height: 213px;
-    background: rgba(255, 255, 255, 0);
-    margin:20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  height: 213px;
+  background: rgba(255, 255, 255, 0);
+  margin: 20px 20px;
 }
 
 .LogoPixel {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navigation Bar */
 .TopBar {
-    background-color: #000000; 
-    width: 100%; 
-    max-width: 1440px;  
-   
-   
+  background-color: #000000;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .TopBar .navbar-nav .nav-link {
-    color: #ffffff;
-    font-family: 'Retro Gaming', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  color: #ffffff;
+  font-family: "Retro Gaming", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .TopBar .navbar-nav .nav-link:hover {
-    transform: scale(1.05); 
+  transform: scale(1.05);
 }
 
 /* Content Section */
 .Contenido {
-    width: 100%;
-    max-width: 1440px;
-    text-align: center;
+  width: 100%;
+  max-width: 1440px;
+  text-align: center;
 }
 
 .PortadaFondo1440 {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /* Section Destacado */
 .Title-Destacados {
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    font-family: 'Retro Gaming', sans-serif;
-    margin-bottom: 25px 0px; 
-    margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  font-family: "Retro Gaming", sans-serif;
+  margin-bottom: 25px 0px;
+  margin-top: 50px;
 }
 
 .ProductosHombres {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo: ajusta automáticamente el número de columnas */
-    gap: 10px; /* Espacio entre los artículos */
-    width: 100%;
-    max-width: 1100px;
-    margin: 50px auto; /* Centra el contenedor */
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsivo: ajusta automáticamente el número de columnas */
+  gap: 10px; /* Espacio entre los artículos */
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto; /* Centra el contenedor */
 }
 
 .Card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f9f9f9; /* Opcional: un fondo para cada tarjeta */
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para cada tarjeta */
-    border-radius: 8px; /* Opcional: bordes redondeados para cada tarjeta */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f9f9f9; /* Opcional: un fondo para cada tarjeta */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: sombra para cada tarjeta */
+  border-radius: 8px; /* Opcional: bordes redondeados para cada tarjeta */
 }
 
 .Image {
-    width: 100%;
-    height: auto;
-    max-width: 200px;
-    max-height: 200px;
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .TextContent {
-    font-weight: 400;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
 .Title {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .Subtitle {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
- /* Section formulario del registro*/
-.FormularioRegistro {
-   
-    width: 100%;
-    max-width: 1440px;
-    display: grid;
-    padding-left: 170px;
-    padding-bottom: 100px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
-    
+/* Section formulario del registro*/
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#authForm {
+  display: block;
+  margin-bottom: 5px;
+}
+ 
+#authForm input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.ContainerLogin {
-    /* border: 1px solid #0741ff; */
-    width: 100%;
-    max-width: 480px;
-    height: 100px; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#formTitle {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-align:center;
+  font-family: "Retro Gaming", sans-serif;
+  margin-bottom: 25px 0px;
+  margin-top: 10px;
 }
 
-.ContainerLogin .Title {
-    width: 100%;
-    height: 100%;
-    font-size: 40px;
-    font-family: 'Retro Gaming', sans-serif;
-}
-
-.form1 {
-    /* border: 1px solid #ff9307; */
-    width: 100%;
-    max-width: 450px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.Input {
-    width: 100%;
-    margin-bottom: 20px;
-    
-}
-
-.Textfield {
-    width: 100%;
-    max-width: 480px;
-    height: 50px;
-    border: 1px solid #989898;
-    border-radius: 5px;
-    padding: 15px;
-    
+.hidden {
+  display: none;
 }
 
 .ButtonGroup {
-    width: 100%;
-    max-width: 480px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    gap:10px;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  gap: 10px;
 }
 
-.Button.Primary {
-    width: 235px;
-    height: 50px;
-    border-radius: 8px;
-    border: 1px solid #000000;
-    background-color: #000000;
-    color: white;
+#loginButton {
+  width: 235px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
 }
 
-.Button.Secondary {
-    width: 235px;
-    height: 50px;
-    border-radius: 8px;
-    border: 1px solid #000000;
-    background-color: #ffffff;
-    color: #000000;
+#registerButton {
+  width: 235px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
 }
 
-.Button.Secondary:hover{
-    background-color:#0099ff;
+#confirmRegisterButton {
+  width: 235px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
 }
-.Button.Primary:hover{
-    background-color:#0099ff;
+
+#loginButton:hover {
+  background-color: #0099ff;
+}
+#registerButton:hover {
+  background-color: #0099ff;
+}
+
+#confirmRegisterButton:hover {
+  background-color: #0099ff;
 }
 
 /* Media Queries para hacer la sección responsiva */
 @media (max-width: 768px) {
-    .FormularioRegistro {
-        grid-template-columns: 1fr;
-        padding-left: 0;
-        gap: 20px;
-    }
+  .form-container {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    gap: 20px;
+  }
 
-    .ContainerLogin,
-    .form1 {
-        max-width: 100%;
-    }
+  #authForm {
+    max-width: 100%;
+  }
 
-    .ButtonGroup {
-        flex-direction: column;
-        align-items: center;
-    }
+  .ButtonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .Button.Primary,
-    .Button.Secondary {
-        width: 100%;
-        margin-bottom: 10px;
-    }
+  #loginButton,
+  #registerButton,
+  #confirmRegisterButton {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
 
 /*Catalogo*/
 .containershop {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card_shop {
-    width: 330px;
-    height: 460px;
-    margin: 30px 10px;
-    border-radius: 15px;
-    background-color:#f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-sizing: border-box;
-    
+  width: 330px;
+  height: 460px;
+  margin: 30px 10px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .card_shop h5 {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
 
 .card_shop img {
-    
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    
-    
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
-.box_elementos{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-
+.box_elementos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
 
-.ul li{
-    list-style: none;
+.ul li {
+  list-style: none;
 }
 
 .quantity-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .quantity-selector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 .quantity-btn {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .quantity-btn:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 #quantity {
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ccc;
-    margin: 0 5px;
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
 }
 
 .add-to-cart-btn {
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin: 5px 0px;
-    cursor: pointer;
-    font-weight:400;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin: 5px 0px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .add-to-cart-btn:hover {
-    background-color: #888888;
+  background-color: #888888;
 }
 
 .titulo_shop {
-    text-align: center;
-    font-family: 'Retro Gaming', sans-serif;
-    margin:20px 0px;
+  text-align: center;
+  font-family: "Retro Gaming", sans-serif;
+  margin: 20px 0px;
 }
 
 @media (max-width: 768px) {
-    .card_shop {
-        width: 45%;
-    }
+  .card_shop {
+    width: 45%;
+  }
 }
 
 @media (max-width: 480px) {
-    .card_shop {
-        width: 100%;
-    }
+  .card_shop {
+    width: 100%;
+  }
 }
 /*pagina carro de compras*/
 .titulo_carro {
-    text-align: center;
-    font-family: 'Retro Gaming', sans-serif;
-    margin: 20px 0;
+  text-align: center;
+  font-family: "Retro Gaming", sans-serif;
+  margin: 20px 0;
 }
 
 .container-gen-carro {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    width:100%;
-    max-width:1200px;
-    gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .container-carro {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card_carro {
-    width: 100%;
-    max-width: 330px;
-    height: auto;
-    margin: 20px 10px;
-    border-radius: 15px;
-    background-color: #ececec;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  margin: 20px 10px;
+  border-radius: 15px;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .card_carro h5 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .card_carro img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .box_elementos_carro {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
 
 .ul_carro li {
-    list-style: none;
+  list-style: none;
 }
 
 .quantity-container-carro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .quantity-selector-carro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 .quantity-btn-carro {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 .quantity-btn-carro:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 #quantity-carro {
-    width: 40px;
-    text-align: center;
-    border: 1px solid #ccc;
-    margin: 0 5px;
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 5px;
 }
 
 .add-to-cart-btn-carro {
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px 0;
-    cursor: pointer;
-    font-weight: 400;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  font-weight: 400;
 }
 
 .add-to-cart-btn-carro:hover {
-    background-color: #cc0f0f;
+  background-color: #cc0f0f;
 }
 
 .container-pago {
-    width: 100%;
-    max-width: 400px;
-    height: 420px;
-    margin: 20px 20px;
-    padding: 20px 20px;
-    border: 1px solid black;
-    border-radius: 15px;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  height: 420px;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .container-pago h2 {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .box_elementos_pago {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .ul-pago h4:nth-child(1) {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .ul-pago h3:nth-child(3) {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .ul-pago h4 {
-    color: #6c757d;
+  color: #6c757d;
 }
 
 .botones-pago {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  gap: 10px;
 }
 
-.boton-primario, .boton-secundario {
-    background-color: #000000;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    font-weight: 400;
+.boton-primario,
+.boton-secundario {
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
-.boton-primario:hover, .boton-secundario:hover {
-    background-color: #0099ff;
+.boton-primario:hover,
+.boton-secundario:hover {
+  background-color: #0099ff;
 }
 
 @media (max-width: 1024px) {
-    .container-gen-carro {
-        grid-template-columns: 1fr;
-    }
+  .container-gen-carro {
+    grid-template-columns: 1fr;
+  }
 
-    .container-pago {
-        width: 100%;
-    }
+  .container-pago {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
-    .card_carro {
-        width: 45%;
-    }
+  .card_carro {
+    width: 45%;
+  }
 
-    .container-carro {
-        justify-content: space-around;
-    }
+  .container-carro {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 480px) {
-    .card_carro {
-        width: 100%;
-    }
+  .card_carro {
+    width: 100%;
+  }
 
-    .container-carro {
-        justify-content: center;
-    }
+  .container-carro {
+    justify-content: center;
+  }
 }
 
 /*estilos de perfil*/
 .profile-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .h2-perfil {
-    text-align: center;
-    margin: 20px 0px;
-    font-family: 'Retro Gaming', sans-serif;
+  text-align: center;
+  margin: 20px 0px;
+  font-family: "Retro Gaming", sans-serif;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .boton-perfil {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    height: 50px;
-    border-radius: 8px;
-    border: 1px solid #000000;
-    background-color: #000000;
-    color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: white;
 }
 
 button:hover {
-    background-color:#0099ff;
+  background-color: #0099ff;
 }
-#delete-button:hover{
-    background-color: #cc0f0f;
+#delete-button:hover {
+  background-color: #cc0f0f;
 }
 
 #profile-info {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #profile-info h3 {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 /*pagina información*/
 .info {
-    width: 100%;
-    max-width: 1000px;
-    text-align: justify;
-    background-color: #ececec;
-    padding: 50px;
-    margin: 50px 0px;
-    border-radius: 15px;
-    
+  width: 100%;
+  max-width: 1000px;
+  text-align: justify;
+  background-color: #ececec;
+  padding: 50px;
+  margin: 50px 0px;
+  border-radius: 15px;
 }
-.info p{
-    line-height: 2.5;
-    font-size: 18px;
-    font-weight: 400;
+.info p {
+  line-height: 2.5;
+  font-size: 18px;
+  font-weight: 400;
 }
-.info h2{
-    font-weight: bold;
-    margin:20px;
-    text-align: center;
+.info h2 {
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
 }
 .info h4 {
-    font-weight: bold;
+  font-weight: bold;
 }
-
-
 
 /* Footer Section */
 .Footer {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1440px;
-    height: 100%;
-    max-height: 500px;
-    padding: 30px 0;
-    color: #ffffff;
-    background-color: #1d1d1d;
-    text-align: center;   
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  max-height: 500px;
+  padding: 30px 0;
+  color: #ffffff;
+  background-color: #1d1d1d;
+  text-align: center;
 }
 .Footer .Title {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px 0px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0px;
 }
 .legal-info {
-    font-size: 25px;
+  font-size: 25px;
 }
-.Policy, .RefundPolicy, .Terms {
-    color: #ffffff;      
+.Policy,
+.RefundPolicy,
+.Terms {
+  color: #ffffff;
 }
 
 /* Media Queries */
 @media (max-width: 767px) {
-    .FormularioRegistro, .Contenido, .ProductosHombres, .Footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .FormularioRegistro,
+  .Contenido,
+  .ProductosHombres,
+  .Footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    .ProductosHombres {
-        grid-template-columns: 1fr;
-    }
+  .ProductosHombres {
+    grid-template-columns: 1fr;
+  }
 }
-
-/*prueba formulario*/ 
-/* styles.css */
-
-.hidden {
-    display: none;
-}
-
