@@ -1,47 +1,79 @@
-/*logica para actualizacion de datos perfil*/
-document.getElementById('profile-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    updateProfile();
-});
+document.getElementById('loginButton').addEventListener('click', loginUser);
+document.getElementById('registerButton').addEventListener('click', toggleRegisterMode);
+document.getElementById('salir_perfil').addEventListener('click', logoutUser);
 
-function updateProfile() {
-    const firstName = document.getElementById('first-name').value;
-    const lastName = document.getElementById('last-name').value;
-    const phone = document.getElementById('phone').value;
-    const address = document.getElementById('address').value;
+function toggleRegisterMode() {
+    document.getElementById('registerFields').classList.remove('hidden');
+    document.getElementById('formTitle').innerText = 'Registrarse';
+    document.getElementById('loginButton').classList.add('hidden');
+    document.getElementById('registerButton').classList.add('hidden');
 
-    document.getElementById('display-first-name').innerText = firstName;
-    document.getElementById('display-last-name').innerText = lastName;
-    document.getElementById('display-phone').innerText = phone;
-    document.getElementById('display-address').innerText = address;
+    const confirmRegisterButton = document.createElement('button');
+    confirmRegisterButton.type = 'button';
+    confirmRegisterButton.id = 'confirmRegisterButton';
+    confirmRegisterButton.innerText = 'Confirmar Registro';
+    document.getElementById('authForm').appendChild(confirmRegisterButton);
 
-    disableEditing();
+    confirmRegisterButton.addEventListener('click', registerUser);
 }
 
-function enableEditing() {
-    document.getElementById('first-name').disabled = false;
-    document.getElementById('last-name').disabled = false;
-    document.getElementById('phone').disabled = false;
-    document.getElementById('address').disabled = false;
+function registerUser() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+    const username = document.getElementById('username').value;
+
+    if (email && password && confirmPassword && username) {
+        if (password !== confirmPassword) {
+            alert('Las contraseñas no coinciden.');
+            return;
+        }
+        localStorage.setItem('user', JSON.stringify({ email, password, username }));
+        alert('Usuario registrado con éxito.');
+        window.location.href = 'index.html';
+    } else {
+        alert('Por favor, complete todos los campos.');
+    }
+}
+function loginUser() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (user && email === user.email && password === user.password) {
+        alert('Inicio de sesión exitoso.');
+        document.getElementById('sessionStatus').classList.remove('hidden');
+        document.getElementById('usernameDisplay').innerText = user.username; // Muestra el nombre de usuario
+        document.getElementById('authForm').classList.add('hidden'); // Oculta el formulario
+        window.location.href = 'Perfil.html'; // Redirecciona a la página de perfil
+    } else {
+        alert('Correo o contraseña incorrectos.');
+    }
 }
 
-function disableEditing() {
-    document.getElementById('first-name').disabled = true;
-    document.getElementById('last-name').disabled = true;
-    document.getElementById('phone').disabled = true;
-    document.getElementById('address').disabled = true;
+function logoutUser() {
+    alert('Sesión cerrada.');
+    localStorage.removeItem('user'); // Elimina el usuario del localStorage
+    document.getElementById('sessionStatus').classList.add('hidden'); // Oculta la indicación de sesión
+    document.getElementById('authForm').classList.remove('hidden'); // Muestra el formulario nuevamente
+    window.location.href = 'index.html'; // Redirecciona a la página de inicio
 }
 
-document.getElementById('delete-button').addEventListener('click', function() {
-    if (confirm('¿Estás seguro de que deseas eliminar tu cuenta?')) {
-        // Lógica para eliminar la cuenta
-        alert('Cuenta eliminada.');
-        // Aquí podrías agregar lógica adicional para redirigir o limpiar el formulario
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.pathname.includes('Perfil.html')) {
+        displayProfileData();
+    }
+
+    // Verificar si hay una sesión activa al cargar la página
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (user) {
+        document.getElementById('sessionStatus').classList.remove('hidden');
+        document.getElementById('usernameDisplay').innerText = user.username;
+        document.getElementById('authForm').classList.add('hidden');
     }
 });
 
-// Al cargar la página, deshabilitar los campos de entrada
-window.onload = disableEditing;
+
 
 /*JavaScript para el catálogo*/
 // scripts.js

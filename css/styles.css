@@ -666,3 +666,11 @@ button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/*prueba formulario*/ 
+/* styles.css */
+
+.hidden {
+    display: none;
+}
+

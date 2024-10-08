@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="Js/scripts.js"></script>
+    
 </head>
 
 <body class="Body">
@@ -48,9 +48,10 @@
             <a class="nav-link" href="Perfil.html">
                 <img class="Vector" src="imagenes/Iconos/IconoPerson.svg" alt="Perfil de usuario">
             </a>
-            <a class="nav-link" href="#"></a>
-                <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil">
+            <a class="nav-link" href="#" id="salir_perfil">
+                <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil"> <!-- Este es el icono para salir del perfil-->
             </a>
+            
         </div>
     </nav>
     <!--Esta es una imagen de portada-->
@@ -97,33 +98,39 @@
             </div>
         </article>
     </section>
-    <!--Esta es una section de iniciar y registrarse--> 
-    <section class="FormularioRegistro">
-        <div class="ContainerLogin">
-            <h3 class="Title">Iniciar sesión / Registrarse</h3>
-        </div>
     
-        <form class="form1" id="loginForm">
-            <div class="Input">
-                <h4 class="Title">Correo</h4>
-                <input type="email" id="email" class="Textfield" placeholder="Ingrese su Correo">
+    <div id="sessionStatus" class="hidden">
+        <p>Sesión iniciada. Bienvenido, <span id="usernameDisplay"></span></p>
+    </div>
+    <!-- formulario--> 
+     <div class="form-container">
+        <form id="authForm">
+            <h2 id="formTitle">Iniciar Sesión</h2>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
-    
-            <div class="Input">
-                <h4 class="Title">Contraseña</h4>
-                <input type="password" id="password" class="Textfield" placeholder="Ingrese su Contraseña">
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
             </div>
-    
-            <div class="ButtonGroup">
-                <button type="button" class="Button Primary" id="loginButton">
-                    <span class="Title">Ingresar</span>
-                </button>
-                <button type="button" class="Button Secondary" id="registerButton">
-                    <span class="Title">Registrarse</span>
-                </button>
+            <div id="registerFields" class="hidden">
+                <div>
+                    <label for="confirmPassword">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+            </div>
+            <div>
+                <button type="button" id="loginButton">Iniciar Sesión</button>
+                <button type="button" id="registerButton">Registrarse</button>
             </div>
         </form>
-    </section>
+    </div>
+  
     <!--Footer-->
     <footer class="Footer" id="contacto">
         
@@ -144,7 +151,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="Js/scripts.js"></script>
     
 </body>
 </html>
