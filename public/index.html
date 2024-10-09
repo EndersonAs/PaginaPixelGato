@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Gato</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body class="Body">
+    <!--imagen con el logo superior del nav -->
+    <header class="Top">
+      <a href="index.html">
+        <img
+          class="LogoPixel img-fluid"
+          src="imagenes/imagenes_index/logo_Pixel.png"
+          alt="Logo de Pixel Gato"
+        />
+      </a>
+    </header>
+    <!--barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark TopBar">
+      <!--Esta es la Section de la barra de navegación-->
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Catalogo.html">HOMBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#loginForm">INICIAR SECCIÓN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#loginForm">REGISTRARSE</a>
+          </li>
+        </ul>
+        <!--iconos del del nav -->
+        <a class="nav-link" href="carrito.html">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoCarro.svg"
+            alt="Carrito de compras"
+          />
+        </a>
+        <a class="nav-link" href="Pasarela.html">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoPasarela.svg"
+            alt="Pasarela de pagos"
+          />
+        </a>
+        <a class="nav-link" href="Perfil.html">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoPerson.svg"
+            alt="Perfil de usuario"
+          />
+        </a>
+        <a class="nav-link" href="#" id="salir_perfil">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoSalir.svg"
+            alt="Salir de Perfil"
+          />
+          <!-- Este es el icono para salir del perfil-->
+        </a>
+      </div>
+    </nav>
+    <!--Esta es una imagen de portada-->
+    <section class="Contenido container">
+      <img
+        class="PortadaFondo1440 img-fluid"
+        src="imagenes/imagenes_index/portada_1440.png"
+        alt="Imagen de portada"
+      />
+    </section>
+    <!--Esta es una section de productos destacados-->
+    <h3 class="Title-Destacados">Destacados</h3>
+    <section class="ProductosHombres">
+      <article class="Card">
+        <a href="/Catalogo.html#Hoodies-Clasicos">
+          <img
+            class="Image"
+            src="/imagenes/imagenes_catalogo/clasico-2.png"
+            alt="imagen"
+          />
+        </a>
+        <div class="TextContent">
+          <p class="Title">Clásicos</p>
+          <p class="Subtitle">Talla: S, M, L, XL</p>
+        </div>
+      </article>
+      <article class="Card">
+        <a href="/Catalogo.html#Hoodie-Retros">
+          <img
+            class="Image"
+            src="/imagenes/imagenes_catalogo/retro-4.png"
+            alt="imagen"
+          />
+        </a>
+        <div class="TextContent">
+          <p class="Title">Retros</p>
+          <p class="Subtitle">Talla: S, M, L, XL</p>
+        </div>
+      </article>
+      <article class="Card">
+        <a href="/Catalogo.html#Hoodies-Clasicos">
+          <img
+            class="Image"
+            src="/imagenes/imagenes_catalogo/clasico-1.png"
+            alt="imagen"
+          />
+        </a>
+        <div class="TextContent">
+          <p class="Title">Clásicos</p>
+          <p class="Subtitle">Talla: S, M, L, XL</p>
+        </div>
+      </article>
+      <article class="Card">
+        <a href="/Catalogo.html#Hoodie-Retros">
+          <img
+            class="Image"
+            src="/imagenes/imagenes_catalogo/retro-2.png"
+            alt="imagen"
+          />
+        </a>
+        <div class="TextContent">
+          <p class="Title">Retros</p>
+          <p class="Subtitle">Talla: S, M, L, XL</p>
+        </div>
+      </article>
+    </section>
+
+    <div id="sessionStatus" class="hidden">
+      <p>Sesión iniciada. Bienvenido, <span id="usernameDisplay"></span></p>
+    </div>
+    <!-- formulario-->
+    <div class="form-container">
+      <form id="authForm">
+        <h2 id="formTitle">Iniciar Sesión</h2>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div id="registerFields" class="hidden">
+          <div>
+            <label for="confirmPassword">Confirmar Contraseña:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+            />
+          </div>
+          <div>
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" />
+          </div>
+        </div>
+        <div class="ButtonGroup ">
+          <button type="button" id="loginButton">Iniciar Sesión</button>
+          <button type="button" id="registerButton">Registrarse</button>
+        </div>
+      </form>
+    </div>
+
+    <!--Footer-->
+    <footer class="Footer" id="contacto">
+      <section class="legal-info">
+        <h4 class="Title">Contacto</h4>
+        <p class="Email">
+          Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a>
+        </p>
+        <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
+        <p class="Location">Bogotá, Colombia</p>
+      </section>
+      <section class="legal-info">
+        <h4 class="Title">Legal</h4>
+        <p><a href="/información.html" class="Policy">Política de envío</a></p>
+        <p>
+          <a href="/información.html" class="RefundPolicy"
+            >Política de reembolso</a
+          >
+        </p>
+        <p>
+          <a href="/información.html" class="Terms">Términos de Servicio</a>
+        </p>
+      </section>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Js/scripts.js"></script>
+    <script src="path/to/your/javascript/file.js"></script>
+  </body>
+</html>
