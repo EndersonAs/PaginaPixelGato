@@ -136,7 +136,7 @@ body {
   display: block;
   margin-bottom: 5px;
 }
- 
+
 #authForm input {
   width: 100%;
   padding: 8px;
@@ -149,7 +149,7 @@ body {
   height: 100%;
   font-size: 30px;
   font-weight: 600;
-  text-align:center;
+  text-align: center;
   font-family: "Retro Gaming", sans-serif;
   margin-bottom: 25px 0px;
   margin-top: 10px;

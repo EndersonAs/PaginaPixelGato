@@ -1,110 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixel Gato</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-<!--imagen con el logo superior del nav -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!--imagen con el logo superior del nav -->
     <header class="Top">
-        <a href="index.html">
-            <img class="LogoPixel img-fluid" src="imagenes/imagenes_index/logo_Pixel.png" alt="Logo de Pixel Gato">
-        </a>
+      <a href="index.html">
+        <img
+          class="LogoPixel img-fluid"
+          src="imagenes/imagenes_index/logo_Pixel.png"
+          alt="Logo de Pixel Gato"
+        />
+      </a>
     </header>
-<!--barra de Navegacion-->
-<nav class="navbar navbar-expand-lg navbar-dark TopBar"> <!--Esta es la Section de la barra de navegación-->
-        
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!--barra de Navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark TopBar">
+      <!--Esta es la Section de la barra de navegación-->
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="Catalogo.html">HOMBRE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contacto">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html#loginForm">INICIAR SECCIÓN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html#loginForm">REGISTRARSE</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Catalogo.html">HOMBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#loginForm">INICIAR SECCIÓN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#loginForm">REGISTRARSE</a>
+          </li>
         </ul>
         <!--iconos del del nav -->
         <a class="nav-link" href="carrito.html">
-            <img class="Vector" src="imagenes/Iconos/IconoCarro.svg" alt="Carrito de compras">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoCarro.svg"
+            alt="Carrito de compras"
+          />
         </a>
         <a class="nav-link" href="Pasarela.html">
-            <img class="Vector" src="imagenes/Iconos/IconoPasarela.svg" alt="Pasarela de pagos">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoPasarela.svg"
+            alt="Pasarela de pagos"
+          />
         </a>
         <a class="nav-link" href="Perfil.html">
-            <img class="Vector" src="imagenes/Iconos/IconoPerson.svg" alt="Perfil de usuario">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoPerson.svg"
+            alt="Perfil de usuario"
+          />
         </a>
-        <a class="nav-link" href="#" id="salir_perfil"></a>
-        <img class="Vector" src="imagenes/Iconos/IconoSalir.svg" alt="Salir de Perfil"> <!-- Este es el icono para salir del perfil-->
-    </a>
-    </div>
-</nav>
-  <!--Section perfil -->
+        <a class="nav-link" href="#" id="salir_perfil">
+          <img
+            class="Vector"
+            src="imagenes/Iconos/IconoSalir.svg"
+            alt="Salir de Perfil"
+          />
+          
+        </a>
+      </div>
+    </nav>
+    <!--Section perfil -->
     <div class="profile-container">
-        <h2 class="h2-perfil">Perfil de Cliente</h2>
-        <form id="profile-form">
-            <div class="form-group">
-                <label for="first-name">Nombres:</label>
-                <input type="text" id="first-name" name="first-name" required>
-            </div>
-            <div class="form-group">
-                <label for="last-name">Apellidos:</label>
-                <input type="text" id="last-name" name="last-name" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Celular:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="address">Dirección:</label>
-                <input type="text" id="address" name="address" required>
-            </div>
-            <button class="boton-perfil" type="submit" id="update-button">Actualizar Información</button>
-            <button class="boton-perfil" type="button" id="edit-button" onclick="enableEditing()">Editar Información</button>
-            <button class="boton-perfil" type="button" id="delete-button">Eliminar Cuenta</button>
-        </form>
-        <div id="profile-info">
-            <h3>Información Actualizada</h3>
-            <p><strong>Nombres:</strong> <span id="display-first-name"></span></p>
-            <p><strong>Apellidos:</strong> <span id="display-last-name"></span></p>
-            <p><strong>Celular:</strong> <span id="display-phone"></span></p>
-            <p><strong>Dirección:</strong> <span id="display-address"></span></p>
+      <h2 class="h2-perfil">Perfil de Cliente</h2>
+      <form id="profile-form">
+        <div class="form-group">
+          <label for="first-name">Nombres:</label>
+          <input type="text" id="first-name" name="first-name" required />
         </div>
+        <div class="form-group">
+          <label for="last-name">Apellidos:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Celular:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="address">Dirección:</label>
+          <input type="text" id="address" name="address" required />
+        </div>
+        <button class="boton-perfil" type="submit" id="update-button">
+          Actualizar Información
+        </button>
+        <button
+          class="boton-perfil"
+          type="button"
+          id="edit-button"
+          onclick="enableEditing()"
+        >
+          Editar Información
+        </button>
+        <button class="boton-perfil" type="button" id="delete-button">
+          Eliminar Cuenta
+        </button>
+      </form>
+      <div id="profile-info">
+        <h3>Información Actualizada</h3>
+        <p><strong>Nombres:</strong> <span id="display-first-name"></span></p>
+        <p><strong>Apellidos:</strong> <span id="display-last-name"></span></p>
+        <p><strong>Celular:</strong> <span id="display-phone"></span></p>
+        <p><strong>Dirección:</strong> <span id="display-address"></span></p>
+      </div>
     </div>
-    
+
     <!--Footer-->
     <footer class="Footer" id="contacto">
-        
-        <section class="legal-info">
-            <h4 class="Title">Contacto</h4>
-            <p class="Email">Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a></p>
-            <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
-            <p class="Location">Bogotá, Colombia</p>
-        </section>
-        <section class="legal-info">
-            <h4 class="Title">Legal</h4>
-                <p><a href="/información.html" class="Policy">Política de envío</a></p>
-                <p><a href="/información.html" class="RefundPolicy">Política de reembolso</a></p>
-                <p><a href="/información.html" class="Terms">Términos de Servicio</a></p>
-        </section>    
-</footer>
+      <section class="legal-info">
+        <h4 class="Title">Contacto</h4>
+        <p class="Email">
+          Correo: <a href="mailto:info@pixelgato.com">info@pixelgato.com</a>
+        </p>
+        <p class="Whatsapp">Whatsapp: 322 000 01 01</p>
+        <p class="Location">Bogotá, Colombia</p>
+      </section>
+      <section class="legal-info">
+        <h4 class="Title">Legal</h4>
+        <p><a href="/información.html" class="Policy">Política de envío</a></p>
+        <p>
+          <a href="/información.html" class="RefundPolicy"
+            >Política de reembolso</a
+          >
+        </p>
+        <p>
+          <a href="/información.html" class="Terms">Términos de Servicio</a>
+        </p>
+      </section>
+    </footer>
     <script src="/Js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
-    
-</body>
+  </body>
 </html>
