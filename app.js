@@ -4,6 +4,7 @@ const usuarios = require('./routes/usuarios');
 const bodyParser = require('body-parser');
 const path = require('path'); 
 const app = express();
+require('dotenv').config();
 
 // Middleware
 app.use(bodyParser.json());
