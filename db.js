@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
-const dbURI = 'mongodb+srv://arizaambiente:72584@cluster0.aepl1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+
+const dbURI = process.env.MONGO_URI;
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected...'))
+  .then(() => console.log('MongoDB connected to Atlas...'))
   .catch(err => console.log(err));
 
 module.exports = mongoose;
+
